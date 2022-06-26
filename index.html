@@ -5,373 +5,836 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seppo</title>
-    <!-- Bootstrap CDN -->
+    <title>Glaze Cinemas</title>
+    <!-- CSS Stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <!-- Css File Link -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Kit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
 </head>
 
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"><img src="https://demo.cocobasic.com/seppo-html/images/logo.png" alt=""
-                class="img-fluid"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-none">
+        <a class="navbar-brand" href="#">Glaze Cinemas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav m-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#hero">Hero</a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About Us</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Glaze Threatre
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#testi">Testimonials</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#pricing">Pricing</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#team">Team</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
                 </li>
 
+            </ul>
 
+            <div class="right">
+                <ul class="navbar-nav">
+                    <li class="nav-item login">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Franchise</a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
     </nav>
 
-    <!-- Hero section -->
+
+    <!-- Hero Section (First Section) -->
     <section id="hero">
-        <div class="container hero-container">
-            <h1>Technology<br>& Visual Agency</h1>
-            <a href="#"><button class="green-btn">Learn More</button></a>
+        <div class="container">
+            <div class="row hero-row">
+                <div class="col hero-card">
+                    <div class="hero-card-text">
+                        <h1>Glaze in Your City</h1>
+                        <p>Glaze Cinemas is building its own cinema network<br> and inviting <span
+                                class="yellow-text">Franchisee/Partners</span> from every village,<br> every district,
+                            every town & every state in India.</p>
+                        <div class="register">
+                            <a href="#">Register Now</a>
+                            <div class="arrow">
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-img"></div>
+                </div>
+
+            </div>
+
+
+            <div class="tags">
+                <div class="tag-section">
+                    <h4>Total Luxury</h4>
+                </div>
+                <div class="tag-section">
+                    <h4>Value for Money</h4>
+                </div>
+                <div class="tag-section">
+                    <h4>Classy Interior</h4>
+                </div>
+                <div class="tag-section">
+                    <h4>Unique Design</h4>
+                </div>
+            </div>
+
+
+            <div class="next-button"></div>
         </div>
     </section>
 
-    <!-- Services -->
-    <section id="services">
+    <!-- End of Hero Section -->
+
+    <!-- Experience Section -->
+    <section id="experience">
         <div class="container">
-            <div class="tag">
-                <p>Services</p>
+            <div class="row">
+                <div class="col-md-6 exp-img-div">
+                    <div class="exp-img"></div>
+                </div>
+                <div class="col-md-6 exp-text-div">
+                    <h1 class="pink-text">Experience Cinema Like Never Before!</h1>
+                    <p>Ultra Luxurious Experience for the Indian Audience.</p>
+                    <p>The Company VCS Indursties Limited has venturedinto Smart Cinema Chain across India with the
+                        Commitment to Provide the Most Comfortable Cinemas with Most Attractive Offers to its Audience
+                        by giving better cinematic experience at affordable rates.
+                    </p>
+
+                    <div class="register">
+                        <a href="#" class="pink-underline">Learn More</a>
+                        <div class="arrow">
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Experience Section -->
+
+    <!-- Start of Gallery Section -->
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col main-col">
+                    <h1 class="pink-text">WE ARE TRANSFORMING<br>THE CINEMATIC INDUSTRY</h1>
+                    <p class="tagline-para">Luxury & Comfort For the Best Cinematic Experience</p>
+
+                    <div class="choices">
+                        <a href="#" class="pink-underline">Hallway</a>
+                        <a href="#">Refresh</a>
+                        <a href="#">Booking Counter</a>
+                        <a href="#">Premium Suite</a>
+                    </div>
+
+                    <div class="video-container embed-responsive .embed-responsive-16by9">
+                        <video controls>
+                            <source src="https://www.youtube.com/embed/yJg-Y5byMMw" type="video">
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Gallery -->
+
+    <!-- Start of Achivements -->
+    <section id="achievements">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="ach-card">
+                        <img src="#" alt="Logo Here" class="img-fluid">
+                        <h5>Exclusive Offers for an Innovative Start</h5>
+
+                        <p>VCS is known for the Innovation & Technology, Team Connplex is constantly working on various
+                            Modules to Increase Quality for Viewers by offering the best OFfers at Connplex.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ach-card">
+                        <img src="#" alt="Logo Here" class="img-fluid">
+                        <h5>Exclusive Offers for an Innovative Start</h5>
+
+                        <p>VCS is known for the Innovation & Technology, Team Connplex is constantly working on various
+                            Modules to Increase Quality for Viewers by offering the best OFfers at Connplex.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ach-card">
+                        <img src="#" alt="Logo Here" class="img-fluid">
+                        <h5>Exclusive Offers for an Innovative Start</h5>
+
+                        <p>VCS is known for the Innovation & Technology, Team Connplex is constantly working on various
+                            Modules to Increase Quality for Viewers by offering the best OFfers at Connplex.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Achivements -->
+
+    <!-- Start of Location -->
+    <section id="location">
+        <div class="container">
+            <div class="row">
+                <div class="col location-tags">
+                    <h1 class="pink-text">We are Taking Over INDIA</h1>
+                    <p>Across 9 States & 30 Different Locations.</p>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-4 service-card">
-                    <h1 class="stroke-text">1</h1>
-                    <h2>Precise</h2>
-                    <p class="mute-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, animi?</p>
-                    <a href=""><button class="green-btn">More</button></a>
+                <div class="col-md-4">
+                    <div class="location-left">
+                        <h5>CONNPLEX THALTEJ</h5>
+                        <p>AHEMDABAD</p>
+                        <h5>CONNPLEX MADHYA PRADESH</h5>
+                        <p>STATE FRANCHISE</p>
+                        <h5>CONNPLEX TARSALI</h5>
+                        <p>VADODARA</p>
+                        <h5>CONNPLEX PORBANDAR</h5>
+                        <p>PROBANDAR</p>
+                        <h5>CONNPLEX DHOLKA</h5>
+                        <p>DHOLKA</p>
+                        <h5>CONNPLEX SIHOR</h5>
+                        <p>BHAVNAGAR</p>
+                        <h5>CONNPLEX SCIENCE CITY</h5>
+                        <p>AHEMDABAD</p>
+                        <h5>CONNPLEX PRAHLADNAGAR</h5>
+                        <p>AHEMDABAD</p>
+                        <h5>CONNPLEX ANAND</h5>
+                        <p>GUJARAT</p>
+                        <h5>CONNPLEX GARRIYADHAR</h5>
+                        <p>GUJARAT</p>
+                        <h5>CONNPLEX BHAVNAGAR</h5>
+                        <p>GUJARAT</p>
+                        <h5>CONNPLEX BANGALORE</h5>
+                        <p>KARNATAKA</p>
+                        <h5>CONNPLEX VATVA</h5>
+                        <p>GUJARAT</p>
+                        <h5>CONNPLEX PUNJAB</h5>
+                        <p>STATE FRANCHISE</p>
+                    </div>
                 </div>
-                <div class="col-md-4 service-card">
-                    <h1 class="stroke-text">2</h1>
-                    <h2>Support</h2>
-                    <p class="mute-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, animi?</p>
-                    <a href=""><button class="green-btn">More</button></a>
+                <div class="col-md-4">
+                    <div class="img">
+                        <img src="https://imgs.search.brave.com/b-XqxoPNpLQgo8pOOtt3t4yqDDQSr1uFt25aQCZKCkw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/ZG93bmxvYWRjbGlw/YXJ0Lm5ldC9sYXJn/ZS9pbmRpYS1tYXAt/cG5nLXRyYW5zcGFy/ZW50LXBpY3R1cmUu/cG5n"
+                            alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="location-right">
+                        <h5>CONNPLEX GUJARAT</h5>
+                        <p>STATE FRANCHISE</p>
+                        <h5>CONNPLEX BIHAR</h5>
+                        <p>STATE FRANCHISE</p>
+                        <h5>CONNPLEX JHARKHAND</h5>
+                        <p>STATE FRANCHISE</p>
+                        <h5>CONNPLEX GAYA</h5>
+                        <p>GAYA</p>
+                        <h5>CONNPLEX UDAIPUR</h5>
+                        <p>RAJASTHAN</p>
+                        <h5>CONNPLEX RAJASTHAN</h5>
+                        <p>STATE FRANCHISE</p>
+                        <h5>CONNPLEX CHHATISGARH</h5>
+                        <p>STATE FRANCHISE</p>
+                        <h5>CONNPLEX VISNAGAR</h5>
+                        <p>AHEMDABAD</p>
+                        <h5>CONNPLEX BIJAYNAGAR</h5>
+                        <p>RAJASTHAN</p>
+                        <h5>CONNPLEX VIJAYPURA</h5>
+                        <p>KARNATAKA</p>
+                        <h5>CONNPLEX HOOGHLY</h5>
+                        <p>WEST BENGAL</p>
+                        <h5>CONNPLEX KATHIYAR</h5>
+                        <p>BIHAR</p>
+                        <h5>CONNPLEX RAIPUR</h5>
+                        <p>CHHATISGARH</p>
+                        <h5>CONNPLEX GOPALGANJ</h5>
+                        <p>STATE BIHAR</p>
+                    </div>
                 </div>
 
-                <div class="col-md-4 service-card">
-                    <h1 class="stroke-text">3</h1>
-                    <h2>Responsive</h2>
-                    <p class="mute-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, animi?</p>
-                    <a href=""><button class="green-btn">More</button></a>
-                </div>
             </div>
-        </div>
     </section>
 
-
-    <!-- About -->
-    <section id="about">
+    <!-- Start of Partners -->
+    <section id="partners">
         <div class="container">
-            <div class="tag">
-                <p>About</p>
-            </div>
             <div class="row">
-                <div class="col-lg-6 text-col">
-                    <p class="mute-text about-tag">WHO WE ARE</p>
-                    <h1 class="about-head">Live up to your creative potential.</h1>
-                    <p class="mute-text about-desc">Code the energy hidden in matter citizens of distant epochs from
-                        which we spring drake equation
-                        perga inconspicuous motespatch clean designed code and energy matter.</p>
-                    <a href="#"><button class="green-btn">Learn More</button></a>
+                <div class="col partners-tags">
+                    <h1 class="pink-text">Our Choice of Proud Partners</h1>
+                    <p>Collabrating for an Extraordinary Level of Services</p>
                 </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="https://demo.cocobasic.com/seppo-html/images/about_01.jpg" alt="">
+            </div>
+
+            <div class="row">
+                <div class="col partners-icons">
+                    <div class="partners-img"><img src="https://projections.co.in/logos/36.png" alt=""
+                            class="img-fluid"></div>
+
+                    <div class="partners-img"><img src="https://projections.co.in/logos/43.png" alt=""
+                            class="img-fluid"></div>
+
+                    <div class="partners-img"><img src="https://projections.co.in/logos/1.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="partners-img"><img src="https://projections.co.in/logos/9.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="partners-img"><img
+                            src="https://imgs.search.brave.com/H6rJ2Ax-VCubqqlexta3xxt1Csbxn2ZXGwgx6X5Sj0Q/rs:fit:1200:1200:1/g:ce/aHR0cDovL2xpcXVp/ZGRlc2lnbnMuaW4v/d3AtY29udGVudC91/cGxvYWRzLzIwMTcv/MDUvMDMtUGF5dG1M/b2dvLmpwZw"
+                            alt="" class="img-fluid"></div>
+
+                    <div class="partners-img"><img
+                            src="https://imgs.search.brave.com/dwpT6d-kw2L187P9PTi65rHTxoS7DH4ib18U611rBUI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi81LzUzL0dv/b2dsZV8lMjJHJTIy/X0xvZ28uc3ZnLzEy/MDBweC1Hb29nbGVf/JTIyRyUyMl9Mb2dv/LnN2Zy5wbmc"
+                            alt="" class="img-fluid"></div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+    <!-- End of Partners -->
 
-    <!-- Testimonial -->
-    <section id="testi">
-        <div class="container testi-container">
+    <!-- Start of Testimonials -->
+
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col testimonials-tags">
+                    <h1 class="pink-text">HAPPY CLIENT'S</h1>
+                    <h1 class="white-heading">TESTIMONIALS</h1>
+                </div>
+            </div>
+
+            <!-- <div class="carousel" data-flickity='{ "groupCells": 2 }'>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div> -->
+
+
             <div class="row testi-row">
                 <div class="col">
-                    <div class="card">
-                        <img src="https://demo.cocobasic.com/seppo-html/images/quotes_image.png" alt="quote-icon"
-                            class="img-fluid quotes_image">
-                        <p class="mute-text desc-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Consectetur
-                            molestias debitis voluptatibus similique, velit quas dignissimos quis nesciunt
-                            exercitationem
-                            harum maiores autem quam, qui iusto soluta suscipit ab. Architecto, voluptas sit? Dolor,
-                            saepe
-                            explicabo molestiae doloribus quod illo laborum impedit cupiditate ex voluptatibus et
-                            accusantium dignissimos quo reprehenderit eum optio.</p>
-                        <div class="lower-testi">
-                            <div class="left">
-                                <div class="testi-pic"></div>
-                                <h6 class="text-mute">Peter Hall</h6>
-                                <p>CEO</p>
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
                             </div>
-
-                            <div class="right">
-                                <div class="left-arrow img-fluid"></div>
-                                <div class="right-arrow img-fluid"></div>
-                                <!-- <img class="img" src="https://demo.cocobasic.com/seppo-html/images/nav_left.png" alt="">
-                                <img src="https://demo.cocobasic.com/seppo-html/images/nav_right.png " alt="" class="img-fluid"> -->
-                            </div>
-
                         </div>
                     </div>
                 </div>
 
                 <div class="col">
-                    <div class="card">
-                        <img src="https://demo.cocobasic.com/seppo-html/images/quotes_image.png" alt="quote-icon"
-                            class="img-fluid quotes_image">
-                        <p class="mute-text desc-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Consectetur
-                            molestias debitis voluptatibus similique, velit quas dignissimos quis nesciunt
-                            exercitationem
-                            harum maiores autem quam, qui iusto soluta suscipit ab. Architecto, voluptas sit? Dolor,
-                            saepe
-                            explicabo molestiae doloribus quod illo laborum impedit cupiditate ex voluptatibus et
-                            accusantium dignissimos quo reprehenderit eum optio.</p>
-                        <div class="lower-testi">
-                            <div class="left">
-                                <div class="testi-pic"></div>
-                                <h6 class="text-mute">Peter Hall</h6>
-                                <p>CEO</p>
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
                             </div>
-
-                            <div class="right">
-                                <div class="left-arrow img-fluid"></div>
-                                <div class="right-arrow img-fluid"></div>
-                                <!-- <img class="img" src="https://demo.cocobasic.com/seppo-html/images/nav_left.png" alt="">
-                                <img src="https://demo.cocobasic.com/seppo-html/images/nav_right.png " alt="" class="img-fluid"> -->
-                            </div>
-
                         </div>
                     </div>
                 </div>
 
                 <div class="col">
-                    <div class="card">
-                        <img src="https://demo.cocobasic.com/seppo-html/images/quotes_image.png" alt="quote-icon"
-                            class="img-fluid quotes_image">
-                        <p class="mute-text desc-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Consectetur
-                            molestias debitis voluptatibus similique, velit quas dignissimos quis nesciunt
-                            exercitationem
-                            harum maiores autem quam, qui iusto soluta suscipit ab. Architecto, voluptas sit? Dolor,
-                            saepe
-                            explicabo molestiae doloribus quod illo laborum impedit cupiditate ex voluptatibus et
-                            accusantium dignissimos quo reprehenderit eum optio.</p>
-                        <div class="lower-testi">
-                            <div class="left">
-                                <div class="testi-pic"></div>
-                                <h6 class="text-mute">Peter Hall</h6>
-                                <p>CEO</p>
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <div class="right">
-                                <div class="left-arrow img-fluid"></div>
-                                <div class="right-arrow img-fluid"></div>
-                                <!-- <img class="img" src="https://demo.cocobasic.com/seppo-html/images/nav_left.png" alt="">
-                                <img src="https://demo.cocobasic.com/seppo-html/images/nav_right.png " alt="" class="img-fluid"> -->
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial-col">
+                        <div class="text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta distinctio harum quam
+                                ducimus totam dolorum.</p>
+                        </div>
+                        <div class="info">
+                            <div class="info-img"></div>
+                            <div>
+                                <h5 class="pink-text">John Doe</h5>
+                                <h5 class="white-heading">Buisness Man</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            <div class="carousel-shift">
+            </div>
         </div>
     </section>
 
-    <!-- Pricing -->
-    <section id="pricing">
-        <div class="tag">
-            <p>Pricing</p>
-        </div>
+    <!-- End of Testimonials -->
+
+    <!-- Start of Program -->
+
+    <section id="program">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 justify-content-center d-flex">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <p class="price-type">Basic</p>
-                            <h5 class="card-title">$20</h5>
-                            <p class="card-text mute-text">per month</p>
-                            <ul class="list">
-                                <li>50 GB Storage.</li>
-                                <li>Unlimited Access</li>
-                                <li>2 Users Per Project.</li>
-                            </ul>
-                            <a href=""><button class="green-btn">CHOOSE PLAN</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 justify-content-center d-flex">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <p class="price-type">Standard</p>
-                            <h5 class="card-title">$25</h5>
-                            <p class="card-text mute-text">per month</p>
-                            <ul class="list">
-                                <li>100 GB Storage.</li>
-                                <li>Unlimited Access</li>
-                                <li>3 Users Per Project.</li>
-                            </ul>
-                            <a href=""><button class="green-btn">CHOOSE PLAN</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 justify-content-center d-flex">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <p class="price-type">Premium</p>
-                            <h5 class="card-title">$30</h5>
-                            <p class="card-text mute-text">per month</p>
-                            <ul class="list">
-                                <li>250 GB Storage.</li>
-                                <li>Unlimited Access</li>
-                                <li>10 Users Per Project.</li>
-                            </ul>
-                            <a href=""><button class="green-btn">CHOOSE PLAN</button></a>
-                        </div>
-                    </div>
+                <div class="col program-tags">
+                    <h1 class="pink-text">Become a <span class="yellow-text">Premium</span> Member Today!</h1>
+                    <p>Join our Membership Program for Additional Benefits</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Team Section -->
-    <section id="team">
-        <div class="tag">
-            <p>Team</p>
-        </div>
-        <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                    <div class="team-card">
-                        <img src="https://demo.cocobasic.com/seppo-html/images/about_item_01.jpg" class="img-fluid"
-                            alt="">
-                        <div class="card-body">
-                            <p class="card-title mute-text">CEO</p>
-                            <h2>Jose Mourinho</h2>
-                            <p class="card-text mute-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Iusto a voluptas ea, placeat, nobis eveniet, dolorum nulla dolor natus numquam saepe
-                                omnis ipsa assumenda rerum similique? Dolorem molestiae minima quo hic, autem corporis,
-                                at magnam quos.</p>
-                            <!-- <a href="#"><button class="green-btn">Know More About Him</button></a> -->
-                        </div>
-
-                        <a href="#" class="team-btn">Contact Him</a>
-                    </div>
+                <div class="col-md-6 program-visuals">
+                    <img src="https://imgs.search.brave.com/FVxklSQfI8NX9CfQSOftTtZEEQmB20qCdpcSmCFNWhY/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/aG9va2FoZm9ydW0u/Y29tL3VwbG9hZHMv/bW9udGhseV8yMDE1/XzEwL1ByZW1pdW1N/ZW1iZXIuanBnLjRk/MTJmNTA5Y2YxZWI2/YmY0MzlkMWRjOTEz/NGNjZDAzLmpwZw"
+                        alt="">
                 </div>
+                <div class="col-md-6 program-visuals">
 
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                    <div class="team-card">
-                        <img src="https://demo.cocobasic.com/seppo-html/images/about_item_02.jpg" class="img-fluid"
-                            alt="">
-                        <div class="card-body">
-                            <p class="card-title mute-text">MD</p>
-                            <h2>Jamie Kyle</h2>
-                            <p class="card-text mute-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Iusto a voluptas ea, placeat, nobis eveniet, dolorum nulla dolor natus numquam saepe
-                                omnis ipsa assumenda rerum similique? Dolorem molestiae minima quo hic, autem corporis,
-                                at magnam quos.</p>
-                            <!-- <a href="#"><button class="green-btn">Know More About Him</button></a> -->
+                    <form action="#">
+                        <div class="head">
+                            <h2>Register <span class="yellow-text">Now</span></h2>
+                        </div>
+                        <div class="form-lower">
+                            <div class="inputs">
+                                <input type="text" placeholder="Name">
+                                <input type="tel" placeholder="Number">
+                                <input type="mail" placeholder="Email">
+                                <input type="text" placeholder="Time">
+                            </div>
+                            <!-- <div class="dropdown"> -->
+                            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                                 -->
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Choose Youe Theatre Plan"
+                                    aria-label="Text input with dropdown button">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-expanded="false"></button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div role="separator" class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <button type="submit" class="btn">
+                                SUBMIT
+                            </button>
                         </div>
 
-                        <a href="#" class="team-btn">Contact Him</a>
-                    </div>
-                </div>
+                    </form>
 
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                    <div class="team-card">
-                        <img src="https://demo.cocobasic.com/seppo-html/images/about_item_03.jpg" class="img-fluid"
-                            alt="">
-                        <div class="card-body">
-                            <p class="card-title mute-text">Designing Head</p>
-                            <h2>Kia Kaklova</h2>
-                            <p class="card-text mute-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Iusto a voluptas ea, placeat, nobis eveniet, dolorum nulla dolor natus numquam saepe
-                                omnis ipsa assumenda rerum similique? Dolorem molestiae minima quo hic, autem corporis,
-                                at magnam quos.</p>
-                            <!-- <a href="#"><button class="green-btn">Know More About Him</button></a> -->
-                        </div>
-
-                        <a href="#" class="team-btn">Contact Him</a>
-                    </div>
                 </div>
             </div>
+        </div>
     </section>
 
+    <!-- End of Program -->
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="container">
-            <img src="https://demo.cocobasic.com/seppo-html/images/logo.png" alt="" class="img-fluid" />
-            <h5>contact@loop.com</h5>
-            <p class="mute-text">@ <span class="year"></span> Coypright | All Right Reserved.</p>
+            <div class="row">
+                <div class="col footer-top">
+                    <div class="footer-left">
+                        <h5>So When Are You Setting Your own Threatre?</h5>
+                        <h1>Are You Ready? Contact Us Today!</h1>
+                    </div>
+                    <div>
+                        <a class="pink-underline arrow" href="">Call Us<div>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 footer-div">
+                    <h1 class="pink-underline">ABOUT GLAZE CINEMAS</h1>
+                    <p>We are the fastest running module of Smart/Mini Theaters in India since 2009 into Movies & Film
+                        Marketing,Promotions,Advertising,In-Film Branding,Distribution.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f pink-text"></i></a>
+                        <a href="#">
+                            <i class="fa-brands fa-google-plus-g pink-text"></i>
+                        </a>
+                        <a href="#"><i class="fa-brands fa-twitter pink-text"></i></a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram pink-text"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-div">
+                    <h1 class="pink-underline">Download</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="download-icons">
+                        <a href="#" class="pink-text">Android Users</a>
+                        <a href="#" class="pink-text">IOS Users</a>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-div">
+                    <h1 class="pink-underline">CONTACT</h1>
+                    <div class="contact-details">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>+123,Main Street,Your City,New York</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-mobile"></i>
+                            <p>+123 4567 8900</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:contact@glazecinemas.com">contact@glazecinemas.com</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-arrow-pointer"></i>
+                            <a href="www.glazecinemas.com">www.glazecinemas.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col copyright">
+                    <p>Copyright &copy; <span id="year"></span> glaze Group.</p>
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- End of Footer -->
 
     <script>
-        let Curryear = new Date().getFullYear();
-        let testiRow = document.querySelector(".testi-row");
-        let leftArrow = document.querySelectorAll(".left-arrow");
-        let rightArrow = document.querySelectorAll(".right-arrow");
-        let cardCount = document.querySelectorAll('.testi-row .col').length;
-        document.querySelector('.year').textContent = Curryear;
+        let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-        let navLinks=document.querySelectorAll('.nav-link') 
-        for (let index = 0; index < navLinks.length; index++) {
-            let e = navLinks[index];
-            e.addEventListener('click',()=>{
-                (document.getElementsByClassName('navbar-toggler')[0]).click();
+        let year = new Date().getFullYear();
+        let yearSpan = document.querySelector("#year");
+        let testiRow = document.querySelector(".testi-row");
+        let testiRowCards = document.querySelectorAll(".testi-row>div");
+        let carouselShift=document.querySelector(".carousel-shift");
+
+        let requiredDots= width<768 ? testiRowCards.length : Math.ceil(testiRowCards.length/2);
+        for (let index = 0; index < requiredDots; index++) {
+            let e=document.createElement('div');
+            e.id=index;
+            carouselShift.appendChild(e);
+        }
+
+        let carouselDots=document.querySelectorAll(".carousel-shift div");
+
+        for (let index = 0; index < carouselDots.length; index++) {
+            const e = carouselDots[index];
+            e.addEventListener('click',(e)=>{
+                for (let index = 0; index < carouselDots.length; index++){
+                    let el=carouselDots[index];
+                    el.classList.contains('active') && el.classList.remove('active');
+                }
+
+                let translateValue= (e.target.id);
+                e.target.classList.add('active');
+                testiRow.style.transform= width<768? `translateX(${-(translateValue*100)/8}%)`:`translateX(${-(translateValue*100)/4}%)`
             })
         }
-        
-        for (let index = 0; index < leftArrow.length; index++) {
-            let e = leftArrow[index];
-            index!=0 && e.addEventListener('click',()=>{
-            testiRow.style.transform += `translateX(${100/cardCount}%`;
-        })
-        }
-
-        for (let index = 0; index < rightArrow.length - 1; index++) {
-            let e = rightArrow[index];
-            e.addEventListener('click',()=>{
-            testiRow.style.transform += `translateX(${-100/cardCount}%`;
-        })
-        }
-        
+        yearSpan.textContent = year;
     </script>
-    <!-- Bootstrap Script file link -->
+    <!-- Flickity Script -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Bootstrap Script CDN -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
