@@ -294,6 +294,7 @@ section {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1548705085-101177834f47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80") center no-repeat;
   background-size: cover;
+  background-attachment:fixed;
 }
 #testimonials .testimonials-tags {
   display: flex;
